@@ -29,7 +29,7 @@ body {
    
 }
 
-.audio{
+.text_daccueil{
     height: 100vh;
     width: 100%;
     padding-top: 10vh;
@@ -41,4 +41,21 @@ body {
 
 .navbar + * {
     padding-top: 10vh; /* Ajustez la valeur en fonction de la hauteur de la barre de navigation */
+}
+
+h1 {
+    font-size: 3em; /* Taille de la police */
+    animation: changeColor 3s infinite alternate; /* Animation pour changer la couleur */
+}
+
+@keyframes changeColor {
+    0% {
+        color: rgb(255, 0, 0); /* Début de l'animation - couleur rouge */
+    }
+    50% {
+        color: rgb(0, 255, 0); /* Milieu de l'animation - couleur verte */
+    }
+    100% {
+        color: rgb(0, 0, 255); /* Fin de l'animation - couleur bleue */
+    }
 }
