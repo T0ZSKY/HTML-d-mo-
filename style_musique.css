@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclure les marges et les bordures dans la taille totale des éléments */
+}
+
+body {
+    background-color: gray;
+}
+
+#bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.navbar {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.acueille {
+    height: auto;
+    width: 9vh;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+
+
+
+
+.navbar + * {
+    padding-top: 10vh;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+
+
+
+
+/* Global Reset */
+* {
+    font-family: 'Allerta', arial, Tahoma;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to left, #7700aa, #8800ff);
+    text-align:center;
+    color:#fff;
+}
+h3{
+    text-shadow:1px 1px 1px #fff;
+}
+/* Start  styling the page */
+.container-audio {
+    width: 66%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+    padding-top: 150px;
+}
+audio {
+  width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    position: relative;
+}
+.container-audio .colum1:last-child {
+    margin: 0;
+}
+.container-audio .colum1 .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to up, #7700aa, #8800ff);
+    position: absolute;
+    -webkit-animation: Rofa 10s infinite ease-in-out;
+    animation: Rofa 10s infinite ease-in-out;
+    bottom: 0;
+}
+
+/* Ajoutez cette règle pour rendre les lecteurs audio initialement invisibles */
+.container-audio audio {
+    display: none;
+}
+
+/* Style pour les boutons */
+button {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 15px 25px; /* Espacement interne */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de souris */
+    margin: 5px; /* Marge */
+    font-size: 16px; /* Taille de police */
+    transition: background-color 0.3s; /* Transition en cas de survol */
+}
+
+/* Style pour les boutons au survol */
+button:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+}
