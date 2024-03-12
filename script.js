@@ -16,7 +16,7 @@ function stopAllAudiosExceptAndHideOthers(exceptAudio) {
         }
     });
 }
-
+    
 // Ajouter des écouteurs d'événements aux boutons pour rendre les lecteurs audio visibles et jouer les sons correspondants
 document.getElementById('btn-pop').addEventListener('click', function() {
     var audioPop = document.getElementById('pop');
